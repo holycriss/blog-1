@@ -1,0 +1,36 @@
+package com.example.blogrock.Service;
+
+
+import com.example.blogrock.Blog;
+import com.example.blogrock.BlogController.Controller;
+import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+@Service
+public class BlogService {
+
+    public List<Blog> blogList;
+
+    public BlogService() {
+        blogList = new ArrayList<Blog>(Arrays.asList(
+
+                new Blog("Dieu est'il parmis nous ?","Oui surment va t'il te rendre visite "),
+                new Blog("le Poker Une Parti De Plaisir","Straight flush wins over all "),
+                new Blog("Esce que je vais arriver a coder???","OUI ET OUI TA PAS LE CHOIX")
+
+
+
+        ));
+
+
+
+
+
+    }
+
+
+
+}
